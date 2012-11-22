@@ -51,3 +51,9 @@
 
         return mysql_fetch_assoc($result);
     }
+
+    function find_all_users(){
+        $sql = "SELECT * FROM users";
+        $result = mysql_query($sql);
+        return $result;
+    }

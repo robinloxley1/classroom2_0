@@ -1,3 +1,25 @@
+<?php
+    //debug.php
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL|E_STRICT);
+
+    require_once("dbconnection.php");
+
+    //read database and get all users;
+    $users_list = find_all_users();
+    while($row = mysql_fetch_array($users_list))
+    {
+        echo $row['display_name'] . "||" . $row['photo_url'] . "||" . $row['seat_id'];
+        echo "<br />";
+    }
+
+//get a user display name, photoURL, profileURL, and SEAT!!
+
+//Draw these things
+
+
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>
 <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -205,7 +227,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 
@@ -218,10 +239,10 @@
     <div class="modal-body">
         <div class="row">
             <div class="span 2">
-                <a href="login.php?provider=facebook" class="zocial facebook">Take it with Facebook</a>
+                <a data-provider="facebook" href="login.php?provider=facebook" class="zocial facebook">Take it with Facebook</a>
             </div>
             <div class="span 2">
-                <a href="login.php?provider=twitter" class="zocial twitter">Take it with Twitter</a>
+                <a data-provider="twitter" href="login.php?provider=twitter" class="zocial twitter">Take it with Twitter</a>
             </div>
         </div>
     </div>

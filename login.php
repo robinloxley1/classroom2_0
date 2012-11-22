@@ -7,8 +7,7 @@
 	// config and includes
    	$config = dirname(__FILE__) . '/library/hybridauth/config.php';
     require_once( "library/hybridauth/Hybrid/Auth.php" );
-    require_once("dbconnection.php");
-    echo('arrived here.');
+    //require_once("dbconnection.php");
     $provider_name = $_GET['provider'];
 
 	try{
@@ -45,8 +44,21 @@
             else{ // if not, create a new one
 
                 // assign a seat, get from ajax
-                $sid = $_POST['seatId'];
-                echo('seat id:' + $sid);
+                /*
+                $json_obj = $_POST['postData'];
+                $sid = $json_obj['seatId'];
+                error_log('I obtain sid as' + $sid);
+
+                //$sid = json_decode($_POST['seatId']);
+                error_log(print_r($_POST, true));
+
+                echo json_encode(
+                    array("status" => $sid)
+                );
+                */
+
+                $sid = $_GET['seatId'];
+                error_log('sid  is -->'.$sid);
                 create_new_user( $provider_name, $user_profile->identifier, $user_profile->displayName, $user_profile->profileURL, $user_profile->photoURL, $sid);
 
                 header( "Location: index.php" );
