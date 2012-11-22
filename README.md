@@ -1,63 +1,44 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# Classroom 2.0
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
-
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
-
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+Classroom 2.0 aims to provide a space for people to get to know each other better.
+The motivation is by browing through people's timelines, one can save more time to
+know about your neighbors and quickly identify people who are sharing similar traits.
+It is useful in the case that either people are too shy or too busy to start talking with others.
+ 
+This project is by no means completed. It serves as a toy app during my 4 days bootCamp hosted
+by Mozillar Online and NTU eventure. Special thanks to my tutors, for my first app.
 
 
 ## Quick start
 
-Choose one of the following options:
-
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the tagged
-   release you'd like to use.
+0. I am using IDE Webstorm, Git as developing environment. Scripting with javascript, HTML, CSS,
+PHP, Mysql. Third party library, HybridAuth for social login.
+1. Download sources from github.
+2. Open with Webstorm and do two types of deployment according to
+ [JetBrains' Wiki](http://wiki.jetbrains.net/intellij/Remote_JavaScript_debugging_with_WebStorm_and_PHPStorm)
+2.0 Env Setting: LAMP, SFTP, IP or Domain Name if you have.
+2.1 Local Deployment for debugging javascript, php, look and feel design etc.
+2.2 Cloud Deployment for debugging social login, since localhost is not allowed.
+I use EC2 in this case.
+3. Setup mysql, using the database.sql script.
+4. Debuging process: check apache2 error.log, enable php strict debuggin by addng the line as in the file, open mysql console for manual data cleaning, take a look at Chrome console and Network status...
+5. Happy coding!
 
 
 ## Features
 
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Opera, Safari, Firefox 3.6+, IE6+).
-* Designed with progressive enhancement in mind.
-* Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
-  normalizations and common bug fixes.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
-* IE-specific classes for easier cross-browser control.
-* Placeholder CSS Media Queries.
-* Useful CSS helpers.
-* Default print CSS, performance optimized.
-* Protection against any stray `console.log` causing JavaScript errors in
-  IE6/7.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for
-  Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+* Allow people to get to know each other better through social networks.
+* Single sign-on and there is no keeping of your secretes.
 
 
 ## Documentation
 
-Take a look at the [documentation table of
-contents](/h5bp/html5-boilerplate/blob/master/doc/TOC.md). This
-documentation is bundled with the project, which makes it readily available for
-offline reading and provides a useful starting point for any documentation
-you want to write about your project.
+1. It is based on [HTML5 Boilerplate](http://html5boilerplate.com).
+2. HybridAuth is the key library to do social login. Some codes are modified
+based on their examples.
+3. Standard PHP and Javascript.
 
 
 ## Contributing
 
-Anyone and everyone is welcome to
-[contribute](/h5bp/html5-boilerplate/blob/master/CONTRIBUTING.md). Hundreds
-of developers have helped make the HTML5 Boilerplate what it is today.
+Anyone and everyone is welcome to contribute, though it is initially my toy app.
