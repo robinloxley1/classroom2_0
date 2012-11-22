@@ -1,0 +1,82 @@
+#class-box{
+    height:600px;
+    border: 10px solid #999999;
+}
+
+#class-front{
+    height:100px;
+    overflow: hidden;
+}
+
+#class-platform{
+    height:100px;
+    border: 1px solid red;
+    margin-top:-40px;
+    background-color: #8b0000;
+    border-radius: 30px;
+}
+
+#class-area{
+    height:500px;
+}
+
+.class-row{
+    /*border:1px solid green;*/
+    height:100px;
+    margin-bottom: 10px;
+}
+
+.class-seat{
+    /*border: 1px solid blue;*/
+    border-radius: 15px;
+    height: 50px;
+}
+
+.svg-seat{
+    width:100%;
+    height:auto;
+    display: block;
+
+}
+.svg-seat-hi{
+    width:100%;
+    height:auto;
+    display: block;
+}
+
+
+.svg-stair{
+    width:auto;
+    height:100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.class-gap{
+    /*border: 1px dashed black;*/
+    height: 50px;
+}
+
+.class-hcenter{
+     /*Firefox*/
+    display:-moz-box;
+    -moz-box-orient:horizontal;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+     /*Safari and Chrome*/
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+     /*W3C*/
+    display:box;
+    box-orient:horizontal;
+    box-pack:center;
+    box-align:center;
+}
+
+body{
+    min-width: 700px;
+}
